@@ -1,0 +1,111 @@
+.pie {
+  background-color: #f2f2f2;
+  padding: 125px 0;
+  color: #272727;
+}
+@media (max-width: 768px) {
+  .pie {
+    padding: 5px 0;
+  }
+}
+.pie__container {
+  border-radius: 12px;
+  box-shadow: -9px -9px 16px 0 rgba(255, 255, 255, 0.75), 9px 9px 16px 0 #e2dfdf;
+  background-color: #f2f2f2;
+  margin: 0 !important;
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .pie__container {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+.pie__row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 !important;
+}
+.pie__headline {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .pie__headline {
+    padding-top: 20px;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+  }
+}
+.pie__underhead {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  margin-top: 0;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  border-bottom: solid 1px #7070701a;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 768px) {
+  .pie__underhead {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.38px;
+    border: none;
+    margin-bottom: 0;
+  }
+}
+.pie__diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie__diagram img {
+  display: block;
+  width: 90%;
+  margin-right: 0 !important;
+}
+@media (min-width: 992px) {
+  .pie__diagram img {
+    margin-left: 30px;
+  }
+}
+.pie__list {
+  padding: 0;
+  list-style-type: none;
+  padding-left: 25px;
+}
+.pie__block {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: -9px -9px 16px 0 rgba(255, 255, 255, 0.75), 9px 9px 16px 0 #e2dfdf;
+  margin-bottom: 25px !important;
+}
+.pie__color {
+  width: 17px;
+  height: 17px;
+  margin-right: 25px;
+  border-radius: 50%;
+  box-shadow: -3px -3px 6px 0 #ffffff;
+  background-color: #5e6a76;
+}
+.pie__text {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}

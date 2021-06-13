@@ -1,0 +1,214 @@
+.header {
+  overflow: hidden;
+}
+.header__nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  font-size: 12px;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 5px 12px 24px 0 rgba(0, 0, 0, 0.15);
+}
+.header__navlogo {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 20px;
+  margin: 0;
+}
+.header__navlist {
+  width: auto;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 30px 0 0;
+  margin: 0;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .header__navlist {
+    display: flex;
+  }
+}
+.header__navlogo {
+  text-transform: uppercase;
+  color: #d7e06d;
+  font-weight: bold;
+  font-size: 16px;
+}
+.header__link {
+  padding: 10px;
+  margin-left: 35px;
+  color: #ffffff;
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+@media (max-width: 1300px) {
+  .header__link {
+    margin-left: 0;
+  }
+}
+.header__link a {
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+  color: #ffffff;
+}
+.header__link:last-child a {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .header__link:last-child a {
+    padding-left: 25px;
+  }
+}
+.header__link:last-child a:hover svg {
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+  fill: #272727 !important;
+}
+.header__link:last-child a svg {
+  position: absolute;
+  top: -57px;
+  left: -62px;
+  transform: scale(0.14);
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+@media (max-width: 1200px) {
+  .header__link:last-child a svg {
+    display: none;
+  }
+}
+.header__link:hover {
+  background-color: #d7e06d;
+  padding: 10px;
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+.header__link:hover a {
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+  color: #272727 !important;
+}
+.header__button {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border: none;
+  display: block;
+}
+@media (min-width: 992px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__content {
+  padding-top: 44px;
+  background-color: #f2f2f2;
+}
+.header__left {
+  align-items: center;
+  padding: 125px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .header__left {
+    align-items: center;
+    padding: 35px;
+  }
+}
+.header__right {
+  margin-bottom: -5px;
+}
+@media (max-width: 768px) {
+  .header__right img {
+    margin-left: -100px;
+  }
+}
+.header__name {
+  margin-bottom: 0;
+  color: #272727;
+  font-size: 36px;
+  font-weight: 900;
+  font-stretch: normal;
+  letter-spacing: 2px;
+}
+.header__undername {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  letter-spacing: 2.4px;
+  color: #272727;
+}
+@media (max-width: 992px) {
+  .header__undername {
+    text-align: center;
+  }
+}
+.header__headcourse {
+  margin-top: 40px;
+  padding: 0 15px;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 6.4px;
+  color: #272727;
+  background-color: #d7e06d;
+}
+.header__headline {
+  background-color: #d7e06d;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  color: #272727;
+}
+@media (max-width: 1200px) {
+  .header__headline {
+    display: none;
+  }
+}
+.header__mobile {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+@media (max-width: 1200px) {
+  .header__mobile {
+    display: block;
+  }
+  .header__mobile div {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    color: #272727;
+    background-color: #d7e06d;
+    padding: 10px;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 3.6px;
+  }
+}
+.header .phone__icon {
+  padding: 8px;
+}
+.header .phone__icon svg {
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}
+.header .phone:hover .phone__icon svg g path {
+  fill: #272727 !important;
+}
+.header .phone:hover .phone__icon svg {
+  transform: rotate(-90deg);
+  transition-duration: 0.5s;
+  animation-direction: alternate;
+}

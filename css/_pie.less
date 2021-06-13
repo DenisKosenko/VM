@@ -1,0 +1,115 @@
+.pie{
+    background-color: #f2f2f2;
+    padding: 125px 0;
+    color: #272727;
+    @media(max-width: 768px) {
+        padding: 5px 0;
+    }
+
+    &__container{
+        border-radius: 12px;
+        box-shadow: -9px -9px 16px 0 rgba(255, 255, 255, 0.75),
+                     9px 9px 16px 0 #e2dfdf;
+        background-color: #f2f2f2;
+        margin: 0 !important;
+        padding: 40px;
+        @media (max-width: 992px) {
+            padding: 0;
+            box-shadow: none;
+        }
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 !important;
+    }
+
+    &__headline{
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        margin-top: 0;
+        @media(max-width: 768px) {
+            padding-top: 20px;
+            font-size: 24px;
+            letter-spacing: 2.4px;
+        }
+    }
+
+    &__underhead{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 2.4px;
+        margin-top: 0;
+        padding-bottom: 35px;
+        margin-bottom: 35px;
+        border-bottom: solid 1px #7070701a;
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        @media(max-width: 768px) {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.8;
+            letter-spacing: 0.38px;
+            border: none;
+            margin-bottom: 0;
+        }
+    }
+
+    &__diagram{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        img{
+            display: block;
+            @media (min-width: 992px) {
+                margin-left: 30px;
+            }
+            width: 90%;
+            margin-right: 0 !important;
+        }
+    }
+
+    &__list{
+        padding: 0;
+        list-style-type: none;
+        padding-left: 25px;
+    }
+
+    &__block{
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: -9px -9px 16px 0 rgba(255, 255, 255, 0.75),
+                     9px 9px 16px 0 #e2dfdf;
+        margin-bottom: 25px !important;
+        
+    }
+    
+
+    &__color{
+        width: 17px;
+        height: 17px;
+        margin-right: 25px;
+        border-radius: 50%;
+        box-shadow: -3px -3px 6px 0 #ffffff;
+        background-color: #5e6a76;
+    }
+
+    &__text{
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
